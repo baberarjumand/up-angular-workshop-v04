@@ -1,1 +1,35 @@
-<p>home works!</p>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-8 offset-2">
+      <div class="row">
+        <ng-template [ngIf]="this.isLoading" [ngIfElse]="loadedCompaniesArr">
+          <!-- display a loading spinner here -->
+          <div class="col">
+            <div class="d-flex justify-content-center">
+              <div class="spinner-border" role="status">
+                <span class="sr-only">Loading...</span>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template #loadedCompaniesArr>
+          <div class="col-4 mt-3" *ngFor="let company of this.companiesArr">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="{{ company.imageUrl }}"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">{{ company.name }}</h5>
+                <p class="card-text">
+                  {{ company.phrase }}
+                </p>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+      </div>
+    </div>
+  </div>
+</div>
