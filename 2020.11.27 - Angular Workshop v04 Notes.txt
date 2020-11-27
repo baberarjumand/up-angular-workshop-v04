@@ -1,0 +1,57 @@
+Up Pay
+Angular Workshop v04 Notes
+Nov 27, 2020
+
+--
+
+Today's workshop targets:
+- Familiarize self with basic concepts involving importing external libraries/packages into an Angular project
+	- Import ng-bootstrap
+
+- Fetch data from external source and display in app
+	- display detail modal for each card
+
+- In achieving the target described above, we will explore several different Angular template directives and data binding options available
+
+--
+
+Practice Exercises:
+
+
+Exercise 1:
+- Make home page responsive
+	- Adapt it to mobile and desktop views
+
+
+Exercise 2:	
+- Display the city and country for each company in it's card
+
+
+Exercise 3:
+- Make all the card heights equal
+	- Currently each card has it's own different height based on the content inside it
+
+
+--
+
+References and Further Reading:
+
+ng-bootstrap:
+https://ng-bootstrap.github.io/#/home
+
+
+mockApi companies collection endpoints:
+- all companies:
+	- https://5f59cabb8040620016ab960d.mockapi.io/companies
+- one company by id:
+	- https://5f59cabb8040620016ab960d.mockapi.io/companies/5
+
+
+Angular Templates:
+https://angular.io/guide/template-syntax
+
+
+Angular Directives:
+https://angular.io/guide/built-in-directives
+
+
